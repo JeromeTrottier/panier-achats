@@ -7,5 +7,5 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('racine')
+  document.querySelector('#racine')
 );
