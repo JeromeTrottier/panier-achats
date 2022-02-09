@@ -1,0 +1,21 @@
+[
+    {
+        "id": "prd0001",
+        "nom": "T-shirt sport GapFit recyclé",
+        "prix": 13.95
+    },
+    {
+        "id": "prd0002",
+        "nom": "T-shirt sport GapFit",
+        "prix": 22.49
+    },{
+        "id": "prd0003",
+        "nom": "T-shirt qui donne du style",
+        "prix": 49.95
+    },{
+        "id": "prd0004",
+        "nom": "T-shirt cool",
+        "prix": 10.95
+    }
+
+]

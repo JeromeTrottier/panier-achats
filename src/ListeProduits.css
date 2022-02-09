@@ -1,0 +1,4 @@
+.produits {
+  display: flex;
+  flex-flow: wrap;
+}
