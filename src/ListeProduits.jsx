@@ -12,13 +12,15 @@ export default function ListeProduits(){
     //     composantsProduits.push(<Produit nom={lesProduits[i].nom} prix={lesProduits[i].prix} pid={lesProduits[i].id}/>);
     // }
 
-    let notes = [50.667, 46.90, 74.0, 89.98];
+ 
+    //Comment utiliser map() et les fonctions flechees
+    /*let notes = [50.667, 46.90, 74.0, 89.98];
 
     // let notesArrondies = notes.map(function(uneNote){
     //     return uneNote.toFixed(1)-0;
     // })
 
-    let notesArrondies = notes.map(uneNote => uneNote.toFixed(1)-0);
+    let notesArrondies = notes.map(uneNote => uneNote.toFixed(1)-0);*/
 
     return (
         <section className="ListeProduits">
@@ -28,8 +30,7 @@ export default function ListeProduits(){
 
 
                 {lesProduits.map(produit => <Produit nom={produit.nom} prix={produit.prix} pid={produit.id}/>)}
-
-
+        
                 {/* <Produit nom="T-shirt sport GapFit recyclé" prix="13.95" pid="prd0001"/>
                 <Produit nom="T-shirt sport GapFit" prix="22.49" pid="prd0002"/>
                 <Produit nom="T-shirt qui donne du style" prix="49.95" pid="prd0003"/>
