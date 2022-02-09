@@ -1,4 +1,4 @@
-import './ListeProduits.css';
+import './ListeProduits.scss';
 import Produit from './Produit.jsx';
 import lesProduits from './data/produits.json';
 
@@ -29,7 +29,7 @@ export default function ListeProduits(){
                 {/* METHOD 1 : {composantsProduits} */}
 
 
-                {lesProduits.map(produit => <Produit nom={produit.nom} prix={produit.prix} pid={produit.id}/>)}
+                {lesProduits.map(produit => <Produit key={produit.id} nom={produit.nom} prix={produit.prix} pid={produit.id}/>)}
         
                 {/* <Produit nom="T-shirt sport GapFit recyclé" prix="13.95" pid="prd0001"/>
                 <Produit nom="T-shirt sport GapFit" prix="22.49" pid="prd0002"/>
