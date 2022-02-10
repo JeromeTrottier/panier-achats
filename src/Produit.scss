@@ -1,10 +1,13 @@
 .Produit {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 8px;
   margin: 0.5rem;
   padding: 0.5rem;
   text-align: center;
   background-color: rgb(255, 255, 255);
   box-shadow: 5px 5px 15px 5px rgba(204, 202, 202, 0.75);
-
+  transition: 0.3s;
   .titre {
     font-size: 1.25rem;
     font-weight: bold;
@@ -12,4 +15,7 @@
   .prix::after {
     content: " $CA";
   }
+}
+.Produit:hover {
+  border: 1px solid rgb(160, 160, 160);
 }

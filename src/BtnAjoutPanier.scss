@@ -1,0 +1,18 @@
+.BtnAjoutPanier {
+  margin: 5px;
+  background: linear-gradient(to bottom, seagreen 50%, rgb(40, 117, 73) 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+  background-color: seagreen;
+  color: white;
+  padding: 0.75rem;
+  border: 2px solid rgb(0, 41, 0);
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.BtnAjoutPanier:hover {
+  background-position: 0% 100%;
+}
