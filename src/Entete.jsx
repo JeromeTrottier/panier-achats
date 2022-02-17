@@ -3,12 +3,9 @@ import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
 import Badge from '@mui/material/Badge';
 
 export default function Entete(props) {
-    // console.log("Le panier dans Entête : ", props.panier)
-    // console.log("Props dans Entête : ", props)
-    let qte = 0;
-    if (props.panier[props.pid]) {
-        qte = props.panier[props.pid].qte;
-    }
+   console.log('Le panier (Entete) : ', props.panier);
+   console.log('Le tableau des valeurs du panier : ', Object.values(props.panier))
+
     return (
         <header className="Entete">
             <h1>Magasin général</h1>

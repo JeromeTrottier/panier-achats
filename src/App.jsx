@@ -11,10 +11,19 @@ function App() {
   console.log("L'etat panier : ", etatPanier)
 
 
+  // let compteurClic = 0;
+  const etatCompteur = useState(0);
+
+  const [compteur, setCompteur] = useState([0]);
+
   return (
     <div className="App">
       <Entete panier={panier}/>
-      <ListeProduits panier={panier} setPanier={setPanier}/>
+      <ListeProduits etatPanier={etatPanier}/>
+      <div>
+        <span>Nombre de clic : {compteur[0]}</span>
+        <button onClick={() => setCompteur([compteur[0] + 1])}>Cliquez-moi</button>
+      </div>
       <PiedPage />
     </div>
   );
