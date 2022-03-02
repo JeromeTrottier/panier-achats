@@ -16,3 +16,8 @@
 .BtnAjoutPanier:hover {
   background-position: 0% 100%;
 }
+.BtnAjoutPanier:active {
+  background: linear-gradient(to bottom, seagreen 50%, rgb(31, 90, 57) 50%);
+  background-size: 100% 200%;
+  background-position: 0% 100%;
+}

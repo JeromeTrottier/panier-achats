@@ -2,7 +2,8 @@ import './App.scss';
 import Entete from './Entete';
 import PiedPage from './PiedPage';
 import ListeProduits from './ListeProduits';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
 
 function App() {
 
@@ -34,7 +35,7 @@ function App() {
         <span>Nombre de clic : {compteur[0]}</span>
         <button onClick={() => setCompteur([compteur[0] + 1])}>Cliquez-moi</button>
       </div>
-      <PiedPage />
+      <PiedPage/>
     </div>
   );
 }

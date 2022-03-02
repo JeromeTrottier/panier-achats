@@ -11,8 +11,11 @@ export default function Entete({panier}) {
     return (
         <header className="Entete">
             <h1>Magasin général</h1>
-            
-            <nav>
+            <nav className="nav-principale">
+                <a href="#">Produits</a>
+                <a href="#">Notre histoire</a>
+            </nav>
+            <nav className="nav-secondaire">
                 <input type="checkbox" id="cc-sommaire-panier"/>
                 <div className="sommaire-panier">
                     <h3>Sommaire du panier</h3>
