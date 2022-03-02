@@ -1,6 +1,7 @@
 import './Entete.scss';
 import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
 import Badge from '@mui/material/Badge';
+import { NavLink } from 'react-router-dom';
 
 // Remarquer la destructuration d'objet
 export default function Entete({panier}) {
@@ -10,10 +11,10 @@ export default function Entete({panier}) {
    const {articlesDifferents, articlesTotaux, sousTotal, taxes, total} = calculerInfoPanier(Object.values(panier));
     return (
         <header className="Entete">
-            <h1>Magasin général</h1>
+            <h1><NavLink to="/">Magasin général</NavLink></h1>
             <nav className="nav-principale">
-                <a href="#">Produits</a>
-                <a href="#">Notre histoire</a>
+                <NavLink to="/nos-produits" className={({isActive}) => isActive ? 'lien-actif' : ''}>Produits</NavLink>
+                <NavLink to="/notre-histoire" className={(lien) => lien.isActive ? 'lien-actif' : ''}>Notre histoire</NavLink>
             </nav>
             <nav className="nav-secondaire">
                 <input type="checkbox" id="cc-sommaire-panier"/>
